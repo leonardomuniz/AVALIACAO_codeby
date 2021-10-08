@@ -31,12 +31,9 @@ router.get('/sendmail', async (req, res) => {
     };
 });
 
-
 EnvioRelatorioQueue.process(async job => {
     const infos = job.data
-    //console.log(infos)
     RegistroEmailJob(infos.totalProdutos, infos.nomeProdutos);
 });
-
 
 module.exports = router;

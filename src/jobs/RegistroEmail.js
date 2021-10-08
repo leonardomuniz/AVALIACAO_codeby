@@ -10,7 +10,7 @@ async function sendMail (quantidadeProdutos, nomeProdutos) {
         to: "teste@teste.com",
         subject: "Email com Nodemailer",
         text: `Olá Senhor(a) !! Aqui está o resultado de pesquisa sobre produtos da API VTEX ${separador}Segundo nossas pesquisas a quantidade de produtos disponíveis na loja é: ${quantidadeProdutos}${separador}Segue a baixo alguns produtos desta lista: \n${nomeProdutos}`,
-        //html: `Olá ! <br>me chamo Midoria <br>E sou um Programador`
+        
     });
 };
 
